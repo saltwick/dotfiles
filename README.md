@@ -1,7 +1,7 @@
 # dotfiles
 ### Dotfiles for my personal Antergos Linux Install
 
-##**[POLYBAR]**
+**[POLYBAR]**
 
 ###### Current Weather Script
 
