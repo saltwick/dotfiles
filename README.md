@@ -1,5 +1,12 @@
 # dotfiles
 ### Dotfiles for my personal Antergos Linux Install
+**[Setup]**
+OS: Antergos Linux
+DM: GDM
+WM: i3-gaps
+Status: Polybar
+Terminal: URxvt-Unicode
+Editor: Vim
 
 **[POLYBAR]**
 
