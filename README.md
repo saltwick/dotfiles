@@ -18,9 +18,7 @@ Editor: Vim
 
 ###### Current Weather Script
 
-Requires Python 3.6+ and pywapi package. Install via
-
-`pip install pywapi`
+Requires Python 3.6+ and pywapi package. Install via `pip install pywapi`
 
 Info-hackspeed script is from the polybar community scripts repo
 
