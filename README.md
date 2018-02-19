@@ -1,6 +1,7 @@
 # dotfiles
 ### Dotfiles for my personal Antergos Linux Install
-**[Setup]**
+**[SETUP]**
+
 OS: Antergos Linux
 
 DM: GDM
