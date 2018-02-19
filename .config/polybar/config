@@ -47,7 +47,7 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 0
 
-modules-left =  i3 separator cpu memory filesystem temperature bluetooth separator xbacklight separator battery separator info-hackspeed
+modules-left =  i3 separator cpu memory filesystem temperature bluetooth separator backlight separator battery separator info-hackspeed
 modules-center = date 
 modules-right = weather separator volume spotify 
 
@@ -153,7 +153,7 @@ label-empty = %icon%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
-[module/xbacklight]
+[module/backlight]
 type = internal/xbacklight
 format = <label> <bar>
 label = 
