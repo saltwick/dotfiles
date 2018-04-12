@@ -5,5 +5,4 @@ URxvt.foreground: rgb:f0/f0/f0
 URxvt.letterSpace: -1 
 URxvt.per-ext-common: selection-to-clipboard
 URxvt.transparent: true
-URxvt.shading:50
-URxvt.blurRadius: 15
+URxvt.shading:70

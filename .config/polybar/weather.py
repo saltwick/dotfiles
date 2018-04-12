@@ -2,7 +2,6 @@
 import pywapi
 import json
 import requests
-
 #Define units - 'imperial' or 'metric'
 UNITS = 'imperial'
 
@@ -27,7 +26,6 @@ zip_code = json_request['zip_code']
 
 #Use pywapi and weather.com to get the current weather
 weather = pywapi.get_weather_from_weather_com(json_request['zip_code'], UNITS)
-
 #Get units
 speed_unit_string = weather['units']['speed']
 temp_unit_string = "°" + weather['units']['temperature']

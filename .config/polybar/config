@@ -1,9 +1,9 @@
 ;:set syn=dosini
 
 [global/wm]
-#margin-top = 8
+#margin-top = 1
 #margin-bottom = 8
-#margin-left = 8
+#margin-left = 5%
 #margin-right = 8
 
 
@@ -29,13 +29,24 @@ primary = #1f222d
 secondary = #FF6200
 alert = #fb4934
 
+[sizes]
+#bar-width = 1700
+#bar-height = 30
+
+bar-offset-x = 200
+bar-top-gap = 20
+bar-bootom-gap = 6
 [bar/bar]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
+width =100%
 height =  25 
-;offset-x = 1%
-;offset-y = 1%
+;offset-x = 2%
+;offset-y = 14%
 fixed-center = true
+#override-redirect = true
+
+#border-left-size = ${sizes.bar-offset-x}
+#border-top-size = ${sizes.bar-top-gap}
 
 locale = en_US.UTF-8
 
@@ -47,14 +58,14 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 0
 
-modules-left =  i3 separator cpu memory filesystem temperature bluetooth separator backlight separator battery separator info-hackspeed
+modules-left =  i3 separator cpu memory filesystem temperature separator backlight  separator battery separator info-hackspeed
 modules-center = date 
-modules-right = weather separator volume spotify 
+modules-right = spotify separator weather separator volume separator powermenu
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-underline-size = 2
+underline-size = 3
 underline-color = ${colors.white}
 
 tray-detached = true
@@ -70,18 +81,22 @@ font-0= "FontAwesome:size=12;2"
 
 font-1 = "monospace:size=8;2"
 
-font-2 = "Weather Icons"
+font-2 = DejaVuSans:pixelsize=10;1
+
+font-3 = WeatherIcons:pixelsize=12;2
 
 [module/spotify]
 type = custom/script
 exec = ~/.config/polybar/polybar-spotify.sh
-interval = 2
+interval = 5
+format-underline = #1ED760
 
 [module/weather]
 type = custom/script
 exec =~/.config/polybar/weather.py
 interval = 1800
 tail = true
+format-underline =  #87CEEB
 
 [module/graphics]
 type = custom/script
@@ -105,12 +120,12 @@ label = "%output%"
 type = custom/script
 exec = ~/.config/polybar/info-hackspeed.sh
 tail = true
-
+format-underline = #514588
 
 
 [module/temperature]
 type = internal/temperature
-interval = 1
+interval = 5
 thermal zone = 0
 warn-temperature = 150
 label =  %temperature-f%
@@ -121,8 +136,8 @@ type = internal/network
 interface = wlp3s0
 interval = 3.0
 accumulate-stats = true
-
-
+format-temperature-underline = #456888
+format-warn-underline = #890505
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
@@ -157,6 +172,7 @@ label-empty-padding = 2
 type = internal/xbacklight
 format = <label> <bar>
 label = 
+format-underline = #e5f0ff
 
 bar-width = 10
 bar-indicator = |
@@ -183,11 +199,12 @@ label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = #928374
 format-mounted-padding = 1
 format-unmounted-padding = 1
+format-mounted-underline = #456888
 
 [module/date]
 type = internal/date
 date =  %A, %d %B %Y   %I:%M
-interval = 5
+interval = 10
 ;format-underline = ${colors.white}
 ;format-background = ${colors.black}
 format-foreground = ${colors.foreground}
@@ -209,6 +226,8 @@ label-padding = 2
 format-muted-foreground = ${colors.white}
 label-muted = 
 format-padding = 2
+format-volume-underline = #1ED760
+format-muted-underline = #890505 
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -232,23 +251,26 @@ format-volume-padding = 1
 
 [module/cpu]
 type = internal/cpu
-interval = 2
+interval = 5
 format-prefix = " "
 format-prefix-foreground = #928374
 ;format-underline = #f90000
 label = %percentage%%
 label-foreground = ${root.foreground}
 format-padding = 1
+format-underline = #456888
 
 [module/memory]
 type = internal/memory
-interval = 2
+interval = 5
 format-prefix = " "
 format-prefix-foreground = #928374
 ;format-underline = #4bffdc
 label = %percentage_used%%
 label-foreground = ${root.foreground}
 format-padding = 1
+format-underline = #456888
+
 
 [module/separator]
 type = custom/text
@@ -260,6 +282,9 @@ content-foreground = #4e4e4e
 type = internal/battery
 full-at = 90
 time-format = %I:%M
+format-charging-underline = #458856
+format-discharging-underline = #890505
+
 
 format-charging = <animation-charging> <label-charging>
 label-charging = %percentage%% 
