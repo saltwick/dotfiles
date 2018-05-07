@@ -148,6 +148,8 @@ bindsym $altMod+Shift+p exec "i3-nagbar -t warning -m 'You pressed the shutdown 
 # Restart
 bindsym $altMod+Shift+r exec "i3-nagbar -t warning -m 'You pressed the restart shortcut. Do you really want to restart?' -b 'Yes, restart' 'shutdown -r now'"
 
+bindsym $altMod+Shift+s exec "systemctl hybrid-sleep"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -211,7 +213,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # floating windows
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Kalu"] floating enable
-
+for_window [class="Thunar"] floating enable
 
 # Multimedia Keys
 
@@ -244,7 +246,7 @@ bindsym $mod+F8 exec mocp --next
 
 # App shortcuts
 bindsym $mod+w exec "/usr/bin/chromium"
-bindsym $mod+n exec "/usr/bin/thunar"
+bindsym $mod+e exec "/usr/bin/thunar"
 bindsym $mod+s exec "xfce4-clipman & xfce4-screenshooter --region"
 # Redirect sound to headphones
 bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
