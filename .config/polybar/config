@@ -51,10 +51,10 @@ locale = en_US.UTF-8
 
 enable-ipc = true
 
-padding-left = 8
+padding-left = 0
 padding-right = 0
 
-module-margin-left = 1
+module-margin-left = 0
 module-margin-right = 0
 
 modules-left =  i3 separator cpu memory filesystem temperature separator backlight  separator battery separator info-hackspeed
@@ -84,7 +84,6 @@ font-1 = "monospace:size=8;2"
 font-2 = DejaVuSans:pixelsize=10;1
 
 font-3 = WeatherIcons:pixelsize=12;2
-
 [module/spotify]
 type = custom/script
 exec = ~/.config/polybar/polybar-spotify.sh
