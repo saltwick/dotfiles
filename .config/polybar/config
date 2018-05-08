@@ -47,7 +47,6 @@ fixed-center = true
 
 #border-left-size = ${sizes.bar-offset-x}
 #border-top-size = ${sizes.bar-top-gap}
-
 locale = en_US.UTF-8
 
 enable-ipc = true
@@ -60,7 +59,7 @@ module-margin-right = 0
 
 modules-left =  i3 separator cpu memory filesystem temperature separator backlight  separator battery separator info-hackspeed
 modules-center = date 
-modules-right = spotify separator weather separator volume separator powermenu
+modules-right = spotify separator weather separator volume separator
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -68,12 +67,13 @@ foreground = ${colors.foreground}
 underline-size = 3
 underline-color = ${colors.white}
 
-tray-detached = true
-tray-position = left
+
+tray-detached = false
+tray-position = right
 tray-offset-x = 0
 tray-offset-y = 0
 ;tray-maxsize = 16
-tray-padding = 2 
+tray-padding = 0
 tray-transparent = false
 tray-scale = 1.0
 
