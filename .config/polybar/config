@@ -92,7 +92,7 @@ format-underline = #1ED760
 
 [module/weather]
 type = custom/script
-exec =~/.config/polybar/weather.py
+exec =~/.config/polybar/weather_script.py
 interval = 1800
 tail = true
 format-underline =  #87CEEB
