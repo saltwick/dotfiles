@@ -1,6 +1,6 @@
 # dotfiles
 ### Dotfiles for my personal Antergos Linux Install
-**[SETUP]**
+## Software
 
 OS: Antergos Linux
 
@@ -14,7 +14,7 @@ Terminal: Gnome-Terminal
 
 Editor: Vim
 
-**[POLYBAR]**
+## Polybar
 
 ### Weather Script
 This script uses the Python weather module to display the current temperature and condition at your current location
