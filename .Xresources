@@ -1,8 +1,7 @@
 URxvt.font: xft:monospace:size=12
-URxvt.background: rgb:95/129/157
+URxvt.background: rgb: f0/f0/f0
 URxvt.scrollBar: false
 URxvt.foreground: rgb:f0/f0/f0
 URxvt.letterSpace: -1 
 URxvt.per-ext-common: selection-to-clipboard
-URxvt.transparent: true
 URxvt.shading:70
