@@ -10,20 +10,23 @@ WM: i3-gaps
 
 Status: Polybar
 
-Terminal: URxvt-Unicode
+Terminal: Gnome-Terminal
 
 Editor: Vim
 
 **[POLYBAR]**
 
-###### Current Weather Script
+### Weather Script
+This script uses the Python weather module to display the current temperature and condition at your current location
 
-Requires Python 3.6+ and pywapi package. Install via `pip install pywapi`
-
+### Words Per Minute Script
 Info-hackspeed script is from the polybar community scripts repo
+
+### Spotify Script
+Another community script
 
 **[VIM]**
 
-Use the afterglow color scheme by danilo-augusto. Repo found [here](https://github.com/danilo-augusto/vim-afterglow)
+Use the hydrangea color scheme by yuttie. Repo [here](https://github.com/yuttie/hydrangea-vim)
 
 
