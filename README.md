@@ -33,7 +33,7 @@ Use the wal color scheme by yuttie. Repo [here](https://github.com/dylanaraps/wa
 
 ## Wallpaper
 
-[Source] (https://cdn.allwallpaper.in/wallpapers/706x400/13627/blue-mountains-clouds-distance-perspective-skies-706x400-wallpaper.jpg)
+[Source](https://cdn.allwallpaper.in/wallpapers/706x400/13627/blue-mountains-clouds-distance-perspective-skies-706x400-wallpaper.jpg)
 
 
 
