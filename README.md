@@ -25,8 +25,16 @@ Info-hackspeed script is from the polybar community scripts repo
 ### Spotify Script
 Another community script
 
-**[VIM]**
+## VIM
 
-Use the hydrangea color scheme by yuttie. Repo [here](https://github.com/yuttie/hydrangea-vim)
+Vundle for Plugins
+
+Use the wal color scheme by yuttie. Repo [here](https://github.com/dylanaraps/wal.vim)
+
+## Wallpaper
+
+[Source] (https://cdn.allwallpaper.in/wallpapers/706x400/13627/blue-mountains-clouds-distance-perspective-skies-706x400-wallpaper.jpg)
+
+
 
 
