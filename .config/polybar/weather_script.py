@@ -1,7 +1,6 @@
 #!/usr/bin/python
 from weather import Weather, Unit
-import json
-import requests
+import geocoder
 #Define units - 'imperial' or 'metric'
 weather = Weather(unit=Unit.FAHRENHEIT)
 #Define variables for weather icons
@@ -15,16 +14,11 @@ LOW_TEMP = "  "
 MED_TEMP = "  "
 HIGH_TEMP = "  "
 
-#Get the geolocation of your IP address through freegeoip.net
-loc_url = 'http://freegeoip.net/json'
-req = requests.get(loc_url)
-json_request = json.loads(req.text)
 
 #Pull the zip code from the json 
-lat = json_request['latitude']
-lon = json_request['longitude']
-
-lookup = weather.lookup_by_latlng(float(lat), float(lon))
+geo = geocoder.ip('me')
+latlng = geo.latlng
+lookup = weather.lookup_by_latlng(latlng[0], latlng[1])
 condition = lookup.condition
 temp = int(condition.temp)
 

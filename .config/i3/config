@@ -267,7 +267,8 @@ exec --no-startup-id "compton -cC --backend xrender --xrender-sync --xrender-syn
 exec --no-startup-id nm-applet
 exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 5s && kalu"
-exec --no-startup-id "feh --bg-fill ~/Pictures/wallpaper.jpg"
+# exec --no-startup-id "feh --bg-fill ~/Pictures/wallpaper.jpg"
+exec --no-startup-id 'wal -l -i ~/Pictures/mountain_wallpaper.jpg'
 exec --no-startup-id "source ~/.rvm/scripts/rvm"
 exec --no-startup-id "xset b off"
 exec --no-startup-id "source ~/.rvm/scripts/rvm"

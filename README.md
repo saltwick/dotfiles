@@ -19,6 +19,8 @@ Editor: Vim
 ### Weather Script
 This script uses the Python weather module to display the current temperature and condition at your current location
 
+Requires geocoder python module - `pip install geocoder`
+
 ### Words Per Minute Script
 Info-hackspeed script is from the polybar community scripts repo
 
